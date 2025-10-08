@@ -1,6 +1,6 @@
 {
   "name": "password-generator-zig",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A cryptographically secure password generator written in Zig",
   "main": "lib/index.js",
   "bin": {
