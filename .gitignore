@@ -1,0 +1,51 @@
+# =========================
+# 🦎 Zig build & cache files
+# =========================
+zig-out/
+.zig-cache/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+
+# =========================
+# 🐘 PHP specific
+# =========================
+vendor/
+composer.lock
+.env
+.env.local
+.env.*
+*.log
+
+# =========================
+# 🧱 OS & IDE files
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# ⚙️ Build artifacts & binaries
+# =========================
+build/
+dist/
+node_modules/
+*.bin
+*.exe
+*.out
+*.json
+
+# =========================
+# 🚫 Temporary or test files
+# =========================
+*.tmp
+*.bak
+*.old
+*.log
+*.cache
