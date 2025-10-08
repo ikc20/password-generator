@@ -20,41 +20,38 @@ Un générateur de mots de passe cryptographiquement sécurisé écrit en Zig pa
 ## 📦 Installation
 
 ### npm
-```bash
 npm install password-generator-zig
 
 Yarn
-bash
 
 yarn add password-generator-zig
 
 Utilisation directe
-bash
 
 npx password-generator-zig
 
 🚀 Utilisation Rapide
 Version Zig originale
-bash
+
 
 zig run src/main.zig
 # Sortie: Mot de passe généré: ZSJnxhT%1Yvp
 
 Version Node.js
-bash
+
 
 npx password-generator-zig
 # Sortie: 🔐 Mot de passe: ZSJnxhT%1Yvp
 
 Version JSON
-bash
+
 
 ./bin/main_json
 # Sortie: {"password": "aB3#xY8!pQ2m", "length": 12, "charset_size": 70}
 
 🔧 Développement
 Structure du projet
-text
+
 
 password-generator/
 ├── src/
@@ -68,7 +65,7 @@ password-generator/
 └── package.json              # Configuration npm
 
 Compilation
-bash
+
 
 # Compiler tous les composants
 npm run build
@@ -84,7 +81,7 @@ npm run test
 
 🔌 Intégration
 Node.js
-javascript
+
 
 const generator = require('password-generator-zig');
 
@@ -96,7 +93,7 @@ console.log(password); // "ZSJnxhT%1Yvp"
 const longPassword = generator.generatePassword(16);
 
 PHP/Symfony
-php
+
 
 <?php
 require_once 'php/password_generator.php';
@@ -162,20 +159,6 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 MIT License - Voir le fichier LICENSE pour plus de détails.
 
 Développé avec ❤️ par ikc20 en Zig
-text
 
 
-Ce README complet inclut :
-- ✅ Votre nom **ikc20** mentionné plusieurs fois
-- ✅ Badges npm et GitHub
-- ✅ Lien vers votre profil GitHub
-- ✅ Instructions d'installation complètes
-- ✅ Documentation technique détaillée
-- ✅ Informations de sécurité
-- ✅ Structure du projet
 
-**Vous pouvez maintenant le pousser sur GitHub :**
-```bash
-git add README.md
-git commit -m "docs: Update README with npm package info and author credits"
-git push origin main
