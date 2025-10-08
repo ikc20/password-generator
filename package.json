@@ -1,0 +1,44 @@
+{
+  "name": "password-generator-zig",
+  "version": "1.0.2",
+  "description": "A cryptographically secure password generator written in Zig",
+  "main": "lib/index.js",
+  "bin": {
+    "password-generator": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "npm run build:lib && npm run build:json && npm run build:main",
+    "build:lib": "zig build-lib src/password_lib.zig -dynamic -O ReleaseSafe -femit-bin=lib/password_lib.node",
+    "build:json": "zig build-exe src/main_json.zig -O ReleaseSafe -femit-bin=bin/main_json",
+    "build:main": "zig build-exe src/main.zig -O ReleaseSafe -femit-bin=bin/password-generator",
+    "prepublish": "npm run build",
+    "test": "zig test src/test_password.zig"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "security",
+    "zig",
+    "crypto",
+    "nodejs",
+    "cli"
+  ],
+  "author": "ikc20",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ikc20/password-generator"
+  },
+  "files": [
+    "src/",
+    "lib/",
+    "bin/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "password-generator-zig": "^1.0.0"
+  }
+}
