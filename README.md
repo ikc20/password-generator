@@ -22,23 +22,21 @@ Un générateur de mots de passe cryptographiquement sécurisé écrit en Zig pa
 ### npm
 npm install password-generator-zig
 
-Yarn
+### Yarn
 
 yarn add password-generator-zig
 
-Utilisation directe
+ ### Utilisation directe
 
 npx password-generator-zig
 
-🚀 Utilisation Rapide
+ ### 🚀 Utilisation Rapide
 Version Zig originale
 
 
 zig run src/main.zig
 
 
-./bin/main_json
-# Sortie: {"password": "aB3#xY8!pQ2m", "length": 12, "charset_size": 70}
 
 
 Compilation : 
