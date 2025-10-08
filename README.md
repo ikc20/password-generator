@@ -1,18 +1,20 @@
 # 🔐 Générateur de Mot de Passe Zig
 
-Un générateur de mots de passe **cryptographiquement sécurisé** écrit en Zig, offrant des performances élevées et une sécurité robuste.
+[![npm version](https://img.shields.io/npm/v/password-generator-zig.svg)](https://www.npmjs.com/package/password-generator-zig)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## ✨ Fonctionnalités
+> **Package npm officiel :** [`password-generator-zig`](https://www.npmjs.com/package/password-generator-zig)
 
-- 🔒 Génération de mots de passe sécurisés
-- ⚡ Haute performance grâce à Zig
-- 🎯 12 caractères par défaut (configurable)
-- 🔠 Mélange de minuscules, majuscules, chiffres et symboles
-- 📦 Multiples formats de sortie (texte, JSON, bibliothèque)
-- 🔌 Intégration avec d'autres langages (PHP, etc.)
+Un générateur de mots de passe cryptographiquement sécurisé écrit en Zig, disponible sur npm et Yarn.
 
-## 🚀 Utilisation Rapide
+## 📦 Installation
 
 ```bash
-# Exécuter le générateur
-zig run src/main.zig
+# npm
+npm install password-generator-zig
+
+# yarn  
+yarn add password-generator-zig
+
+# utilisation directe
+npx password-generator-zig
