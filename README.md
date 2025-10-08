@@ -35,36 +35,13 @@ Version Zig originale
 
 
 zig run src/main.zig
-# Sortie: Mot de passe généré: ZSJnxhT%1Yvp
-
-Version Node.js
-
-
-npx password-generator-zig
-# Sortie: 🔐 Mot de passe: ZSJnxhT%1Yvp
-
-Version JSON
 
 
 ./bin/main_json
 # Sortie: {"password": "aB3#xY8!pQ2m", "length": 12, "charset_size": 70}
 
-🔧 Développement
-Structure du projet
 
-
-password-generator/
-├── src/
-│   ├── main.zig              # Version exécutable simple
-│   ├── main_json.zig         # Version avec sortie JSON
-│   ├── password_lib.zig      # Version bibliothèque partagée
-│   └── test_password.zig     # Tests unitaires
-├── php/
-│   └── password_generator.php # Bindings PHP/Symfony
-├── build.zig                 # Configuration de compilation
-└── package.json              # Configuration npm
-
-Compilation
+# Compilation : 
 
 
 # Compiler tous les composants
@@ -109,6 +86,7 @@ echo "Mot de passe: " . $password;
     Node.js 14.0.0 ou supérieur (pour le package npm)
 
     Aucune dépendance externe
+    
 
 🔒 Sécurité
 
@@ -121,6 +99,7 @@ Le générateur utilise le système cryptographique de Zig (std.crypto.random) q
     ✅ Approprié pour des applications de sécurité
 
     ✅ Basé sur des primitives cryptographiques robustes
+    
 
 📊 Caractéristiques Techniques
 
@@ -133,6 +112,7 @@ Le générateur utilise le système cryptographique de Zig (std.crypto.random) q
     Performance : Génération en temps constant
 
     License : MIT
+    
 
 🌐 Liens
 
@@ -153,10 +133,13 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
     Améliorer la documentation
 
     Créer des bindings pour d'autres langages
+    
 
 📄 License
 
+
 MIT License - Voir le fichier LICENSE pour plus de détails.
+
 
 Développé avec ❤️ par ikc20 en Zig
 
