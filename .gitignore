@@ -49,3 +49,9 @@ node_modules/
 *.old
 *.log
 *.cache
+
+echo "bin/" >> .gitignore
+echo "lib/" >> .gitignore
+echo "yarn.lock" >> .gitignore
+echo "node_modules/" >> .gitignore
+echo ".zig-cache/" >> .gitignore
