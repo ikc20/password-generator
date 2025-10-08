@@ -1,57 +1,11 @@
-# =========================
-# 🦎 Zig build & cache files
-# =========================
-zig-out/
-.zig-cache/
-*.o
-*.obj
-*.a
-*.so
-*.dylib
-*.exe
-
-# =========================
-# 🐘 PHP specific
-# =========================
-vendor/
-composer.lock
-.env
-.env.local
-.env.*
-*.log
-
-# =========================
-# 🧱 OS & IDE files
-# =========================
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# =========================
-# ⚙️ Build artifacts & binaries
-# =========================
-build/
-dist/
+bin/
+lib/
 node_modules/
-*.bin
-*.exe
-*.out
-*.json
-
-# =========================
-# 🚫 Temporary or test files
-# =========================
-*.tmp
-*.bak
-*.old
-*.log
-*.cache
-
-echo "bin/" >> .gitignore
-echo "lib/" >> .gitignore
-echo "yarn.lock" >> .gitignore
-echo "node_modules/" >> .gitignore
-echo ".zig-cache/" >> .gitignore
+.zig-cache/
+yarn.lock
+*.dylib
+*.so
+*.dll
+*.node
+main_json
+password-generator
